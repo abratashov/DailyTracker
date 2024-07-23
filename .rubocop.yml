@@ -1,0 +1,26 @@
+require:
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rspec_rails
+  - rubocop-factory_bot
+  - rubocop-capybara
+  - rubocop-minitest
+
+# Current Ruby version is 3.1.3
+AllCops:
+  TargetRubyVersion: 3.3.x
+
+# Disable restriction for multiple expectations that speed up tests passing
+RSpec/MultipleExpectations:
+  Enabled: false
+
+# Disable mandatory class documentation
+Documentation:
+  Enabled: false
+
+# Allows using short curly braces {} instead of do/end construction in the tests
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*
