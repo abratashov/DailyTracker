@@ -6,7 +6,7 @@ ruby '3.3.3'
 
 gem 'puma', '~> 6.4'
 gem 'rails', '7.1.3.4'
-gem 'sqlite3', '~> 1.4'
+gem 'sqlite3', '~> 2.9'
 
 # Default Rails front-end
 gem 'importmap-rails', '~> 2.0' # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
